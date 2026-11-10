@@ -1,34 +1,62 @@
-# 秘密情報（コミットしない）
-.env
-.env.*
-!.env.example
-.dev.vars
-.dev.vars.*
-!.dev.vars.example
-*.pem
-*.key
-*.p12
-service-account*.json
-credentials*.json
-google-services.json
-GoogleService-Info.plist
+# Unity が自動生成するフォルダ
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+/[Mm]emoryCaptures/
+/[Rr]ecordings/
 
-# 依存関係とビルドの成果物
-node_modules/
-dist/
-build/
-out/
-.next/
-.wrangler/
+# アセットストアのツール
+/[Aa]ssets/AssetStoreTools*
+
+# IDE（Visual Studio / Rider / VS Code）
+.vs/
+.vscode/
+.idea/
+*.csproj
+*.unityproj
+*.sln
+*.slnx
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+*.pidb.meta
+*.pdb.meta
+*.mdb.meta
+
+# ビルド成果物
+*.apk
+*.aab
+*.unitypackage
+*.app
+crashlytics-buildid.txt
+sysinfo.txt
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Python（server/）
 __pycache__/
 *.pyc
 .venv/
 venv/
+/server/data/
 
-# OS とエディタ
-.DS_Store
-Thumbs.db
-.idea/
-.vscode/*
-!.vscode/extensions.json
-*.log
+# 鍵を入れるファイル
+.env
+
+# ローカルのビルド成果物と Unity の一時ファイル
+/Builds/
+/.utmp/
